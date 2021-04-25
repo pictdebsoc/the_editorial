@@ -1,0 +1,235 @@
+body{
+  font-family: lato, sans-serif;
+}
+
+.landing-page-container{
+  height: 100vh;
+  width: 100%;
+
+  background-image: url('./editorial4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background: no-repeat;  */
+}
+
+.landing-page-gradient{
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.5)); */
+  background-color: white;
+  backdrop-filter: blur(0px);
+  color: black;
+}
+
+.debsoc-logo{
+  margin-top: 40px;
+  height: 250px;
+  width: 250px;
+}
+
+.title{
+  font-family: 'lato', sans-serif;
+
+  font-weight: 300;
+
+  margin-top: 20px;
+  font-size: 150px;
+}
+
+.message{
+  font-family: 'lato', sans-serif;
+  margin-top: 40px;
+  font-size: 60px;
+}
+
+.latest-container{
+  height: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.issue{
+  font-family: lato, sans-serif;
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.latest-poster{
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  height: 500px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.latest .date{
+  font-family: 'lato', sans-serif;
+  font-size: 20px;
+}
+
+.latest .description{
+  font-family: 'lato', sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.latest .read{
+  margin-top: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.latest .read a{
+  color: white;
+  text-decoration: none;
+  text-emphasis: none;
+}
+
+.footer{
+  font-size: 15px;
+  height: fit-content;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+}
+/* 
+.fa-linkedin{
+  color: #007bb5;
+}
+
+.fa-instagram{
+  color: #6f00ff;
+}
+
+.fa-twitter{
+  color: #55ACEE;
+} */
+
+
+.fa:hover {
+  color: white;
+  opacity: 0.7;
+}
+
+/* Media Queries */
+
+@media (max-width: 1100px){
+
+  .landing-page-container{
+    height: 700px;
+  }
+
+  .title{
+    font-size: 80px;
+  }
+  .message{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 700px){
+
+  .landing-page-container{
+    height: 700px;
+  }
+
+  .title{
+    font-size: 60px;
+  }
+  .message{
+    font-size: 30px;
+  }
+}
+
+/* Scroll Animation */
+
+.link-to-latest{
+  text-decoration: none;
+  text-emphasis: none;
+  color: black;
+}
+
+.link-to-latest:hover{
+  text-emphasis: none;
+  text-decoration: none;
+  color: black;
+}
+
+.scroll-down-container {
+  cursor: pointer;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: black;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
