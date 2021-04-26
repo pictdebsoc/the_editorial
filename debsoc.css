@@ -3,8 +3,6 @@ body{
 }
 
 .landing-page-container{
-  height: 100vh;
-  width: 100%;
 
   background-image: url('./editorial4.jpg');
   background-position: center;
@@ -12,6 +10,8 @@ body{
   background-attachment: fixed;
   background-repeat: no-repeat;
   /* background: no-repeat;  */
+
+  height: 100vh;
 }
 
 .landing-page-gradient{
@@ -19,7 +19,6 @@ body{
   height: 100%;
   background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5));
   /* background-color: white; */
-  backdrop-filter: blur(0px);
   color: white;
 }
 
@@ -45,6 +44,7 @@ body{
 }
 
 .latest-container{
+  padding-inline: 10px;
   height: 100%;
   position: relative;
   margin-bottom: 50px;
@@ -53,25 +53,23 @@ body{
 .issue{
   font-family: lato, sans-serif;
   margin-top: 10px;
-  font-size: 40px;
+  font-size: 3rem;
 }
 
 .latest-poster{
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  height: 500px;
+  height: 600px;
   width: 400px;
-  overflow: hidden;
 }
 
 .latest .date{
   font-family: 'lato', sans-serif;
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 
 .latest .description{
   font-family: 'lato', sans-serif;
-  font-size: 20px;
-  margin-top: 30px;
+  font-size: 1.3rem;
 }
 
 .latest .read{
@@ -80,13 +78,14 @@ body{
 }
 
 .latest .read a{
+  font-size: 1rem;
   color: white;
   text-decoration: none;
   text-emphasis: none;
 }
 
 .footer{
-  font-size: 15px;
+  font-size: 1rem;
   height: fit-content;
 }
 
@@ -136,15 +135,20 @@ body{
 
 @media (max-width: 800px){
 
+  .latest-poster{
+    height: unset;
+    width: 100%;
+  }
+
   .landing-page-container{
     height: 700px;
   }
 
   .title{
-    font-size: 60px;
+    font-size: 50px;
   }
   .message{
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -172,7 +176,7 @@ body{
 .chevron {
   position: absolute;
   top: 0px;
-  left: 10px;
+  left: 0px;
   width: 28px;
   height: 8px;
   opacity: 0;
