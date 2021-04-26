@@ -23,6 +23,7 @@
 
   <title>THE EDITORIAL</title>
   <link rel="stylesheet" href='./assets/editorial.css' />
+
 </head>
 
 <body onload="removePreloader()">
@@ -35,7 +36,7 @@
 
   <div class='landing-page-container px-0' id='header'>
     <div class='landing-page-gradient px-0'>
-      <div class='landing-page-content'>
+      <div class='landing-page-content' id='head-content' style='display: none;'>
         <div class="text-center">
           <img class='debsoc-logo' src="./assets/Debsoc.png" alt="Debsoc Logo">
           <div class="message"> The Official Debate Society of PICT </div>
@@ -105,10 +106,11 @@
   <script>
 
     let preLoader = document.getElementById("pre-loader")
-    let content = document.getElementsByClassName("landing-page-content");
+    let content = document.getElementById("head-content");
 
     const removePreloader = () => {
       preLoader.style.display = 'none';
+      content.style.display='block';
     }
 
   </script>
