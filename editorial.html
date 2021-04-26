@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <div class='landing-page-container px-0'>
+  <div class='landing-page-container px-0' id='header'>
     <div class='landing-page-gradient px-0'>
       <div class='landing-page-content'>
         <div class="text-center">
@@ -105,7 +105,8 @@
   <script>
 
     let preLoader = document.getElementById("pre-loader")
-    
+    let content = document.getElementsByClassName("landing-page-content");
+
     const removePreloader = () => {
       preLoader.style.display = 'none';
     }

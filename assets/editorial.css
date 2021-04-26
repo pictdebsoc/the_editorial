@@ -1,7 +1,13 @@
-
-
 body{
   font-family: lato, sans-serif;
+}
+
+.pause-anim * {
+  transition: none;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 .landing-page-container{
