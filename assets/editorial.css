@@ -1,6 +1,4 @@
-*{
-  font-weight: 300;
-}
+
 
 body{
   font-family: lato, sans-serif;
@@ -16,8 +14,7 @@ body{
   /* background: no-repeat;  */
 
   height: 100vh;
-
-  min-height: fit-content;
+  min-height: 750px;
 }
 
 .landing-page-gradient{
@@ -34,19 +31,33 @@ body{
   width: 250px;
 }
 
+@font-face {
+  font-family: 'title';
+  src: url('./arial.ttf')
+}
+
+@font-face{
+  font-family: 'title1';
+  src: url('./times-ro.ttf');
+}
+
 .title{
-  font-family: 'lato', sans-serif;
+
+  font-family: title1;
 
   font-weight: 300;
 
   margin-top: 20px;
-  font-size: 120px;
+  font-size: 100px;
 }
 
 .message{
-  font-family: 'lato', sans-serif;
+  font-family: title1;
+  
   margin-top: 40px;
-  font-size: 60px;
+  font-size: 40px;
+
+  font-weight: lighter;
 }
 
 .latest-container{
@@ -167,6 +178,10 @@ body{
   text-decoration: none;
   text-emphasis: none;
   color: white;
+
+  font-size: 20px;
+
+  letter-spacing: 1px;
 }
 
 .link-to-latest:hover{
