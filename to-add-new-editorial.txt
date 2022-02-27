@@ -1,0 +1,9 @@
+to add a new editorial to the website, follow these steps
+
+( NOTE: lets consider you want to add editorial.pdf )
+
+1. paste your sample.pdf file in folder pdf-viewer/external/pdfjs-2.1.266-dist/web/
+2. now write code for the new editorial ( or copy the previous code and make changes according to the new editorial )
+3. Read More Button -> set the href tag to './pdf-viewer/external/pdfjs-2.1.266-dist/web/viewer.html?file=<FILENAME>' ( in this case <FILENAME> will be replaced by editorial.pdf) 
+4. so our final link will become './pdf-viewer/external/pdfjs-2.1.266-dist/web/viewer.html?file=editorial.pdf'
+5. now if you click on readmore editorial.pdf will open in the pdf viewer
